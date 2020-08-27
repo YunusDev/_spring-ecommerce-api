@@ -4,6 +4,7 @@ package com.yunus.ecommerce_api.dao;
 import com.yunus.ecommerce_api.EcommerceApiApplication;
 import com.yunus.ecommerce_api.entity.User;
 import com.yunus.ecommerce_api.service.UserService;
+import org.junit.Ignore;
 import org.junit.Test;
 import org.junit.runner.RunWith;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -14,6 +15,7 @@ import static org.assertj.core.api.Assertions.assertThat;
 
 @RunWith(SpringRunner.class)
 @SpringBootTest(webEnvironment = SpringBootTest.WebEnvironment.RANDOM_PORT, classes = EcommerceApiApplication.class)
+@Ignore
 public class UserAuthTest {
 
 //    @MockBean
