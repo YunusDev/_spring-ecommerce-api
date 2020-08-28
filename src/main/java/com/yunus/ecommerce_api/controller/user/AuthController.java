@@ -41,7 +41,6 @@ public class AuthController {
     private UserService userService;
 
 
-
     @PostMapping("/login")
     public ResponseEntity<?> createAuthenticationToken(@RequestBody @Valid AuthenticationRequest authenticationRequest) throws Exception {
 
