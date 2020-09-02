@@ -27,7 +27,7 @@ public class Category {
     @Column(name = "description")
     private String description;
 
-    @OneToMany(mappedBy = "category", fetch = FetchType.LAZY, cascade = {CascadeType.ALL})
+    @OneToMany(mappedBy = "category", fetch = FetchType.EAGER, cascade = {CascadeType.ALL})
     @JsonManagedReference(value = "cat_prod_back_ref")
     private List<Product> products;
 
@@ -79,13 +79,13 @@ public class Category {
         this.description = description;
     }
 //
-//    public List<Product> getProducts() {
-//        return products;
-//    }
-//
-//    public void setProducts(List<Product> products) {
-//        this.products = products;
-//    }
+    public List<Product> getProducts() {
+        return products;
+    }
+
+    public void setProducts(List<Product> products) {
+        this.products = products;
+    }
 
     public Date getDate() {
         return date;

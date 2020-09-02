@@ -32,7 +32,7 @@ public class Product {
     @Column(name = "date")
     private Date date;
 
-    @ManyToOne(fetch = FetchType.LAZY)
+    @ManyToOne()
     @JoinColumn(name = "category_id")
     @JsonBackReference(value = "cat_prod_back_ref")
     private Category category;
